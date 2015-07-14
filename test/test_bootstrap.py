@@ -5,16 +5,19 @@
 test_bootstrap
 ----------------------------------
 
-Tests for `boostrap` module.
+Tests for `bootstrap` module.
 """
 
+import os
+import sys
 import unittest
 
 sys.path.insert(0, os.path.abspath('..'))
-from .bootstrap import bootstrap
+from bootstrap import bootstrap
+print sys.path
 
 
-class test_bootstrap(unittest.TestCase):
+class TestBootstrap(unittest.TestCase):
 
     def setUp(self):
         pass
