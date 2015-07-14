@@ -41,6 +41,6 @@ setup(
     author = "Jan-Philip Gehrcke",
     author_email = "jgehrcke@googlemail.com",
     url = "http://gehrcke.de/2014/02/distributing-a-python-command-line-application",
-    test_suite='tests',
+    test_suite='test',
     tests_require=test_requirements
 )
