@@ -7,6 +7,15 @@
 import re
 from setuptools import setup
 
+requirements = [
+    # TODO: put package requirements here
+]
+
+test_requirements = [
+    # TODO: put package test requirements here
+]
+
+
 
 version = re.search(
     '^__version__\s*=\s*"(.*)"',
@@ -22,6 +31,7 @@ with open("README.rst", "rb") as f:
 setup(
     name = "cmdline-bootstrap",
     packages = ["bootstrap"],
+    install_requires=requirements,
     entry_points = {
         "console_scripts": ['bootstrap = bootstrap.bootstrap:main']
         },
@@ -31,4 +41,6 @@ setup(
     author = "Jan-Philip Gehrcke",
     author_email = "jgehrcke@googlemail.com",
     url = "http://gehrcke.de/2014/02/distributing-a-python-command-line-application",
-    )
+    test_suite='tests',
+    tests_require=test_requirements
+)
