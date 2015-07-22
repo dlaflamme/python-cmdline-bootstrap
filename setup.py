@@ -38,9 +38,9 @@ setup(
     version = version,
     description = "Python command line application bare bones template.",
     long_description = long_descr,
-    author = "Jan-Philip Gehrcke",
-    author_email = "jgehrcke@googlemail.com",
+    author = "Firstname Lastname",
+    author_email = "firstname.lastname@google.com",
     url = "http://gehrcke.de/2014/02/distributing-a-python-command-line-application",
-    test_suite='test',
+    test_suite='tests',
     tests_require=test_requirements
 )
